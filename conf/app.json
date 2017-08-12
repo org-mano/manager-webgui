@@ -1,0 +1,48 @@
+{
+  "initialTemplate": {
+    "admin": "initial-template-admin",
+    "user": "initial-template",
+    "customer": "initial-template-customer"
+  },
+  "singleManager": true,
+  "whiteLabel": {
+    "enabled": false,
+    "logoUrl": "/app/images/Cloudify-icon.png",
+    "mainColor": "black",
+    "pagesLocation": "",
+    "headerTextColor": "white",
+    "loginPageHeader": "",
+    "loginPageText": "",
+    "sidebarColor": "#ffffff",
+    "sidebarTextColor" : "#000000"
+  },
+  "db": {
+    "url": "postgres://cloudify:cloudify@localhost:5432/stage",
+    "options": {
+      "pool": {
+        "max": 5,
+        "min": 0,
+        "idle": 10000
+      }
+    }
+  },
+  "proxy": {
+    "timeouts": {
+      "get": 10000,
+      "post": 30000,
+      "put": 30000,
+      "delete": 10000
+    }
+  },
+  "influx": {
+    "port": 8086,
+    "user" : "root",
+    "password" : "root",
+    "database": "cloudify"
+  },
+  "github": {
+    "username": "cloudify-examples@gigaspaces.com",
+    "password": "C10udify-5xamples"
+  },
+  "extractedSourcesDir": "/extractedSources"
+}
